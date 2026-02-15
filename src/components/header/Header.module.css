@@ -1,0 +1,45 @@
+.header_module {
+    height: 56px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+
+.logo {
+    width: 196px;
+    height: 34 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background-color: #FFFFFF;
+}
+
+.logo_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.logo_image {
+    width: 26.5px;
+    height: 26.5px;
+}
+
+.button_download {
+    font-size:18px;
+    color: #FFFFFF;
+    width: 272px;
+    height: 100%;
+    background-color: #24A79C;
+    border: none;
+    border-radius: 94.27px;
+    padding: 10px;
+}
+
