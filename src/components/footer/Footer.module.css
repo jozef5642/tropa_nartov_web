@@ -28,16 +28,7 @@
     margin-bottom: 8px;
 }
 
-.logo_icon {
-    width: 40px;
-    height: 40px;
-    background-color: #24A79C;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
+
 
 .company_name {
     font-size: 24px;
@@ -170,4 +161,7 @@
         font-size: 14px;
     }
 }
+
+
+
 

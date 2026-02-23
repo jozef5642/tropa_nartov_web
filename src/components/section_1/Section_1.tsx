@@ -8,11 +8,24 @@ import download_button_android_img from "../../../public/section_1/download_butt
 export default function Section_1() {
     return (
         <section className={styles.section_container}>
+            {/* Декоративные круговые линии на фоне */}
+            <div className={styles.circle_background}>
+                <svg className={styles.circle_svg} viewBox="0 0 2000 2000">
+                    <circle cx="1000" cy="1000" r="600" fill="none" stroke="#E5E5E5" strokeWidth="1" />
+                    <circle cx="1000" cy="1000" r="850" fill="none" stroke="#E5E5E5" strokeWidth="1" />
+                    <circle cx="1000" cy="1000" r="1100" fill="none" stroke="#E5E5E5" strokeWidth="1" />
+                </svg>
+            </div>
+
             <div className={styles.section}>
                 {/* О республике */}
-                <div className={styles.about_the_republic_sec}>
-                <img className={styles.about_the_republic_img} src={about_the_republic_img.src} alt="about_the_republic_img" />
-                </div>
+
+               
+                    <div className={styles.about_the_republic_sec}>
+                        <img className={styles.about_the_republic_img} src={about_the_republic_img.src} alt="about_the_republic_img" />
+                        <div className={styles.about_the_republic_sec_background} />
+                    </div>
+                
 
                 {/* Телефон */}
                 <div className={styles.phone_sec}>
@@ -20,7 +33,8 @@ export default function Section_1() {
                 </div>
 
                 <div className={styles.screen}>
-                    <img src={screen_img.src} alt="screen_img" />
+                    <img className={styles.screen_img} src={screen_img.src} alt="screen_img" />
+                    <div className={styles.screen_background} />
                 </div>
 
             </div>
