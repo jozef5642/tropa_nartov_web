@@ -26,6 +26,8 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 8px;
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -135,30 +137,149 @@
     box-shadow: 0 4px 12px rgba(36, 167, 156, 0.3);
 }
 
-@media (max-width: 968px) {
-    .footer_content {
-        grid-template-columns: 1fr;
-        gap: 48px;
+/* Ноутбук (до 1280px) */
+@media (max-width: 1280px) {
+    .footer {
+        padding: 64px 24px 28px 24px;
+        margin-top: 64px;
     }
 
-    .footer {
-        padding: 48px 24px 24px 24px;
+    .footer_content {
+        gap: 48px;
+        margin-bottom: 40px;
+    }
+
+    .company_name {
+        font-size: 22px;
+    }
+
+    .column_title {
+        font-size: 17px;
+    }
+
+    .divider {
+        margin-bottom: 28px;
     }
 }
 
+/* Планшет (до 1024px) */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 48px 24px 24px 24px;
+        margin-top: 48px;
+    }
+
+    .footer_content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 36px;
+    }
+
+    .footer_column {
+        gap: 12px;
+    }
+
+    .company_name {
+        font-size: 20px;
+    }
+
+    .company_description {
+        font-size: 15px;
+    }
+
+    .column_title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .nav_link {
+        font-size: 15px;
+    }
+
+    .divider {
+        margin-bottom: 24px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .social_icon {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* Мобильная (до 768px) */
 @media (max-width: 768px) {
-    .bottom_content {
-        flex-direction: column;
-        gap: 24px;
-        align-items: flex-start;
+    .footer {
+        padding: 32px 16px 20px 16px;
+        margin-top: 32px;
+    }
+
+    .footer_content {
+        gap: 32px;
+        margin-bottom: 28px;
+    }
+
+    .footer_column {
+        gap: 10px;
+    }
+
+    .logo_container {
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+
+    .company_name {
+        font-size: 18px;
     }
 
     .company_description {
         font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .contact_email {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .column_title {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .nav_links {
+        gap: 10px;
     }
 
     .nav_link {
         font-size: 14px;
+    }
+
+    .divider {
+        margin-bottom: 20px;
+    }
+
+    .bottom_content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .social_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social_icon svg {
+        width: 20px;
+        height: 20px;
     }
 }
 

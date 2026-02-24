@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 // Импорт глобальных стилей приложения
 import "./globals.css";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 // Настройка шрифта Manrope с созданием CSS переменной для использования в стилях
 const manrope = Manrope({
@@ -32,7 +34,9 @@ export default function RootLayout({
     <html lang="en">
       {/* Применение CSS переменной шрифта Manrope к body для использования во всем приложении */}
       <body className={manrope.variable}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

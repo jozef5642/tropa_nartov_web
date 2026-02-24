@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css"
 import logo from "../../../public/logo.svg"
+import Link from "next/link"
 
 export default function Footer() {
     return (
@@ -7,12 +8,12 @@ export default function Footer() {
             <div className={styles.footer_content}>
                 {/* Левая колонка - Информация о компании */}
                 <div className={styles.footer_column}>
-                    <div className={styles.logo_container}>
+                    <Link href="/" className={styles.logo_container}>
                         <div className={styles.logo_icon}>
                            <img src={logo.src} alt="logo" />
                         </div>
                         <h2 className={styles.company_name}>Тропа Нартов</h2>
-                    </div>
+                    </Link>
                     <p className={styles.company_description}>
                         Мобильный гид по республикам Северного Кавказа — достопримечательности, маршруты, культура и традиции в одном приложении.
                     </p>
@@ -23,7 +24,7 @@ export default function Footer() {
                 <div className={styles.footer_column}>
                     <h3 className={styles.column_title}>Навигация</h3>
                     <nav className={styles.nav_links}>
-                        <a href="#" className={styles.nav_link}>Главная</a>
+                        <Link href="/" className={styles.nav_link}>Главная</Link>
                         <a href="#" className={styles.nav_link}>О проекте</a>
                         <a href="#" className={styles.nav_link}>Скачать приложение</a>
                         <a href="#" className={styles.nav_link}>Контакты</a>
@@ -34,8 +35,8 @@ export default function Footer() {
                 <div className={styles.footer_column}>
                     <h3 className={styles.column_title}>Документы</h3>
                     <nav className={styles.nav_links}>
-                        <a href="#" className={styles.nav_link}>Политика конфиденциальности</a>
-                        <a href="#" className={styles.nav_link}>Пользовательское соглашение</a>
+                        <Link href="/politika-konfidencialnosti" className={styles.nav_link}>Политика конфиденциальности</Link>
+                        <Link href="/polzovatelskoe-soglashenie" className={styles.nav_link}>Пользовательское соглашение</Link>
                     </nav>
                 </div>
             </div>

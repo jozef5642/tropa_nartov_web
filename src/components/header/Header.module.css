@@ -20,6 +20,8 @@
     align-items: center;
     gap: 8px;
     background-color: #FFFFFF;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo_text {

@@ -112,50 +112,175 @@
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+.download_button_ios,
+    .download_button_android {
+        padding: 12px 24px;
+    }
+
+/* Ноутбук (до 1280px) */
+@media (max-width: 1280px) {
+    .section_container {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        min-height: 520px;
+        padding: 64px 24px;
+    }
+
+    .circle_lines {
+        width: 680px;
+        height: 680px;
+    }
+
     .main_title {
-        font-size: 32px;
+        font-size: 56px;
+        margin-bottom: 16px;
     }
 
     .subtitle {
-        font-size: 16px;
-    }
-
-    .download_buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .download_button {
-        width: 100%;
-        justify-content: center;
+        font-size: 17px;
+        margin-bottom: 40px;
     }
 
     .icon_document,
     .icon_speech,
     .icon_location,
     .icon_thumbs {
-        width: 48px;
-        height: 48px;
+        width: 56px;
+        height: 56px;
     }
 
-    .icon_document svg,
-    .icon_speech svg,
-    .icon_location svg,
-    .icon_thumbs svg {
-        width: 20px;
-        height: 20px;
+    .download_button_ios,
+    .download_button_android {
+        padding: 12px 48px;
+    }
+}
+
+/* Планшет (до 1024px) */
+@media (max-width: 1024px) {
+    .section_container {
+        margin-top: 48px;
+        margin-bottom: 48px;
+        min-height: 480px;
+        padding: 48px 24px;
     }
 
     .circle_lines {
-        width: 600px;
-        height: 600px;
+        width: 560px;
+        height: 560px;
+    }
+
+    .main_title {
+        font-size: 44px;
+        margin-bottom: 14px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .free_label {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .icon_document,
+    .icon_speech,
+    .icon_location,
+    .icon_thumbs {
+        width: 50px;
+        height: 50px;
+    }
+
+    .download_buttons {
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .download_button_ios,
+    .download_button_android {
+        padding: 10px 36px;
+    }
+
+    .download_button_store {
+        font-size: 16px;
+    }
+}
+
+/* Мобильная (до 768px) */
+@media (max-width: 768px) {
+    .section_container {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        min-height: 420px;
+        padding: 32px 16px;
+    }
+
+    .circle_lines {
+        width: 400px;
+        height: 400px;
+    }
+
+    .main_title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+
+    .free_label {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .download_buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 24px;
+        gap: 10px;
+    }
+
+    .download_button_ios,
+    .download_button_android {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .download_button_ios,
+    .download_button_android {
+        padding: 12px 24px;
+    }
+
+    .download_button_store {
+        font-size: 16px;
+    }
+
+    .icon_document,
+    .icon_speech,
+    .icon_location,
+    .icon_thumbs {display: none;
+    }
+
+    .icon_document img,
+    .icon_speech img,
+    .icon_location img,
+    .icon_thumbs img {
+        width: 18px;
+        height: 18px;
     }
 }
 
 .download_buttons {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
     margin-top: 32px;
 }
@@ -166,7 +291,7 @@
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    padding: 12px 64px;
+    padding: 12px 24px;
     background-color: #F6F6F6;
     color: #000000;
     border-radius: 12px;
@@ -185,6 +310,8 @@
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.2;
+    text-align: left;
+    text-wrap: nowrap;
 }
 
 .download_button_label {
