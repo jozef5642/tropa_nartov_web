@@ -198,8 +198,8 @@
 
 .download_button_ios:hover,
 .download_button_android:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.95);
+    
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .download_button_text {
@@ -218,6 +218,46 @@
 .download_button_store {
     font-size: 18px;
     font-weight: 600;
+}
+
+/* Ноутбук (до 1280px) */
+@media (max-width: 1280px) {
+    .section_container {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .section {
+        gap: 16px;
+    }
+
+    .about_the_republic_sec {
+        width: 240px;
+        margin-top: 160px;
+    }
+
+    .phone_sec {
+        width: 420px;
+    }
+
+    .phone_sec img {
+        width: 100%;
+        height: auto;
+    }
+
+    .screen {
+        width: 240px;
+        margin-top: 160px;
+    }
+
+    .text_sec_D_h1 {
+        font-size: 56px;
+        margin-top: 40px;
+    }
+
+    .text_sec_D_h5 {
+        font-size: 17px;
+    }
 }
 
 /* При уменьшении экрана: screen и about_the_republic_sec уходят за phone_sec */
