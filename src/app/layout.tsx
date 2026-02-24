@@ -35,7 +35,7 @@ export default function RootLayout({
       {/* Применение CSS переменной шрифта Manrope к body для использования во всем приложении */}
       <body className={manrope.variable}>
         <Header />
-        {children}
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
