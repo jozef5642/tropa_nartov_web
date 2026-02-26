@@ -10,10 +10,10 @@ export default function Section_1() {
         <section className={styles.section_container}>
             {/* Декоративные круговые линии на фоне */}
             <div className={styles.circle_background}>
-                <svg className={styles.circle_svg} viewBox="0 0 2000 2000">
-                    <circle cx="1000" cy="1000" r="600" fill="none" stroke="#E5E5E5" strokeWidth="1" />
-                    <circle cx="1000" cy="1000" r="850" fill="none" stroke="#E5E5E5" strokeWidth="1" />
-                    <circle cx="1000" cy="1000" r="1100" fill="none" stroke="#E5E5E5" strokeWidth="1" />
+                <svg className={styles.circle_svg} viewBox="0 0 2400 2400">
+                    <circle cx="1200" cy="1200" r="350" fill="none" stroke="#E7EAEE" strokeWidth="1" />
+                    <circle cx="1200" cy="1200" r="500" fill="none" stroke="#E7EAEE" strokeWidth="1" />
+                    <circle cx="1200" cy="1200" r="650" fill="none" stroke="#E7EAEE" strokeWidth="1" />
                 </svg>
             </div>
 

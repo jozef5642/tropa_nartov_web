@@ -12,7 +12,7 @@ export default function Header() {
             <h1 className={styles.logo_text}>Тропа нартов</h1>
           </Link>
         </div>
-        <button className={styles.button_download}>Загрузить приложение</button>
+        <Link href="/#section-6" className={styles.nav_link}><button className={styles.button_download}>Загрузить приложение</button></Link>
       </div>
 
     </header>
