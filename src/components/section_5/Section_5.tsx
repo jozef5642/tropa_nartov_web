@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Link from "next/link";
 import styles from "./Section_5.module.css"
 import advertisement_img_1 from "../../../public/section_5/advertisement_img_1.svg"
 import advertisement_img_2 from "../../../public/section_5/advertisement_img_2.svg"
@@ -55,7 +56,7 @@ export default function Section_4() {
         }));
     };
     return (
-        <section className={styles.section_container}>
+        <section id="section-5" className={styles.section_container}>
             <div className={styles.text_sec_5_container}>
                 <div className={styles.text_sec_5_container_content}>
                     <h1 className={styles.text_sec_5_h1}>Станьте партнером Тропы Нартов</h1>
@@ -143,7 +144,14 @@ export default function Section_4() {
                                 required
                             />
                             <label htmlFor="privacy" className={styles.checkbox_label}>
-                                Я ознакомлен с политикой конфиденциальности и соглашаюсь на обработку персональных данных
+                                Я ознакомлен с{" "}
+                                <Link href="/politika-konfidencialnosti" className={styles.privacy_link}>
+                                    политикой конфиденциальности
+                                </Link>{" "}
+                                и соглашаюсь на{" "}
+                                <Link href="/politika-konfidencialnosti" className={styles.privacy_link}>
+                                    обработку персональных данных
+                                </Link>
                             </label>
                         </div>
                         {message && (

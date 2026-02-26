@@ -26,8 +26,8 @@ export default function Footer() {
                     <nav className={styles.nav_links}>
                         <Link href="/" className={styles.nav_link}>Главная</Link>
                         <a href="#" className={styles.nav_link}>О проекте</a>
-                        <a href="#" className={styles.nav_link}>Скачать приложение</a>
-                        <a href="#" className={styles.nav_link}>Контакты</a>
+                        <Link href="/#section-6" className={styles.nav_link}>Скачать приложение</Link>
+                        <Link href="/#section-5" className={styles.nav_link}>Контакты</Link>
                     </nav>
                 </div>
 

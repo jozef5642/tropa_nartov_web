@@ -9,14 +9,14 @@ import download_button_android_img from "../../../public/section_1/download_butt
 
 export default function Section_6() {
     return (
-        <section className={styles.section_container}>
+        <section id="section-6" className={styles.section_container}>
             <div className={styles.background_pattern}>
                 {/* Декоративные круговые линии */}
                 <div className={styles.circle_lines}>
                     <svg className={styles.circle_svg} viewBox="0 0 800 800">
-                        <circle cx="400" cy="400" r="150" fill="none" stroke="#E5E5E5" strokeWidth="1" />
                         <circle cx="400" cy="400" r="250" fill="none" stroke="#E5E5E5" strokeWidth="1" />
                         <circle cx="400" cy="400" r="350" fill="none" stroke="#E5E5E5" strokeWidth="1" />
+                        <circle cx="400" cy="400" r="450" fill="none" stroke="#E5E5E5" strokeWidth="1" />
                     </svg>
                 </div>
 
