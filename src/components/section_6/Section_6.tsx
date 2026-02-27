@@ -14,9 +14,9 @@ export default function Section_6() {
                 {/* Декоративные круговые линии */}
                 <div className={styles.circle_lines}>
                     <svg className={styles.circle_svg} viewBox="0 0 800 800">
-                        <circle cx="400" cy="400" r="250" fill="none" stroke="#E5E5E5" strokeWidth="0.5" />
-                        <circle cx="400" cy="400" r="350" fill="none" stroke="#E5E5E5" strokeWidth="0.5" />
-                        <circle cx="400" cy="400" r="450" fill="none" stroke="#E5E5E5" strokeWidth="0.5" />
+                        <circle cx="400" cy="500" r="200" fill="none" stroke="#EDEDED" strokeWidth="1" />
+                        <circle cx="400" cy="500" r="400" fill="none" stroke="#EDEDED" strokeWidth="1" />
+                        <circle cx="400" cy="500" r="590" fill="none" stroke="#EDEDED" strokeWidth="1" />
                     </svg>
                 </div>
 

@@ -11,9 +11,9 @@ export default function Section_1() {
             {/* Декоративные круговые линии на фоне */}
             <div className={styles.circle_background}>
                 <svg className={styles.circle_svg} viewBox="0 0 2400 2400">
-                    <circle cx="1200" cy="1200" r="350" fill="none" stroke="#E7EAEE" strokeWidth="1" />
-                    <circle cx="1200" cy="1200" r="500" fill="none" stroke="#E7EAEE" strokeWidth="1" />
-                    <circle cx="1200" cy="1200" r="650" fill="none" stroke="#E7EAEE" strokeWidth="1" />
+                    <circle cx="1200" cy="1200" r="568" fill="none" stroke="#EDEDED" strokeWidth="1" />
+                    <circle cx="1200" cy="1200" r="932" fill="none" stroke="#EDEDED" strokeWidth="1" />
+                    <circle cx="1200" cy="1200" r="1249" fill="none" stroke="#EDEDED" strokeWidth="1" />
                 </svg>
             </div>
 
