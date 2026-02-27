@@ -73,7 +73,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 420px 40px #4bc9be;
+    box-shadow: 0 0 920px 90px #4bc9be;
     z-index: -1;
     pointer-events: none;
 }
@@ -126,7 +126,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 420px 40px #FFE5AA;
+    box-shadow: 0 0 920px 90px #FFE5AA;
     z-index: -1;
     pointer-events: none;
 }
