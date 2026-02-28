@@ -29,7 +29,7 @@ export default function Section_1() {
 
                 {/* Телефон */}
                 <div className={styles.phone_sec}>
-                    <img src={phone_img.src} alt="phone_img" />
+                    <img src={phone_img.src} alt="phone_img" fetchPriority="high"/>
                 </div>
 
                 <div className={styles.screen}>
@@ -44,7 +44,7 @@ export default function Section_1() {
                 <h5 className={styles.text_sec_D_h5}>Открой достопримечательности республик СКФО — места,<br /> маршруты, культура и традиции в одном приложении</h5>
                 <div className={styles.download_buttons}>
                     <a href="https://www.apple.com/in/app-store/" className={styles.download_button_ios}>
-                        <img src={download_button_ios_img.src} alt="download_button_ios_img" />
+                        <img src={download_button_ios_img.src}  alt="download_button_ios_img" />
                         <div className={styles.download_button_text}>
                             <span className={styles.download_button_label}>Загрузите в</span>
                             <span className={styles.download_button_store}>App Store</span>
