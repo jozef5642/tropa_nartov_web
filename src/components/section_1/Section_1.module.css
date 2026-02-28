@@ -1,5 +1,6 @@
 .section_container {
     width: 100%;
+    max-width: 1440px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     justify-content: center;
     margin-bottom: 80px;
     margin: 0;
+    padding: 0;
     overflow: visible;
 }
 
@@ -40,7 +42,7 @@
 }
 
 .section {
-    width: 100%;
+    width: 80%;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;

@@ -18,13 +18,3 @@
     justify-content: center;
     align-items: center;
 }
-
-/* Планшет (до 1024px) */
-@media (max-width: 1024px) {
-    .div_container {
-        
-        margin-left: 10px;
-        margin-right: 10px;
-       
-    }
-}
