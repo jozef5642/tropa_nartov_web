@@ -41,7 +41,7 @@ export default function Section_4() {
             } else {
                 setMessage({ type: 'error', text: data.error || 'Произошла ошибка при отправке формы' });
             }
-        } catch (error) {
+        } catch {
             setMessage({ type: 'error', text: 'Произошла ошибка при отправке формы. Пожалуйста, попробуйте позже.' });
         } finally {
             setIsSubmitting(false);

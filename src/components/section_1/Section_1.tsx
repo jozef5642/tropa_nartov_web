@@ -1,7 +1,7 @@
 import styles from "./Section_1.module.css"
-import about_the_republic_img from "../../../public/section_1/about_the_republic_img.svg"
-import screen_img from "../../../public/section_1/screen_img.svg"
-import phone_img from "../../../public/section_1/phone_img.svg"
+import about_the_republic_img from "../../../public/section_1/about_the_republic_img.webp"
+import screen_img from "../../../public/section_1/screen_img.png"
+import phone_img from "../../../public/section_1/phone_img.webp"
 import download_button_ios_img from "../../../public/section_1/download_button_ios_img.svg"
 import download_button_android_img from "../../../public/section_1/download_button_android_img.svg"
 
@@ -22,7 +22,7 @@ export default function Section_1() {
 
                
                     <div className={styles.about_the_republic_sec}>
-                        <img className={styles.about_the_republic_img} src={about_the_republic_img.src} alt="about_the_republic_img" />
+                        <img className={styles.about_the_republic_img} src={about_the_republic_img.src} alt="about_the_republic_img" fetchPriority="high" />
                         <div className={styles.about_the_republic_sec_background} />
                     </div>
                 
@@ -33,7 +33,7 @@ export default function Section_1() {
                 </div>
 
                 <div className={styles.screen}>
-                    <img className={styles.screen_img} src={screen_img.src} alt="screen_img" />
+                    <img className={styles.screen_img} src={screen_img.src} alt="screen_img" fetchPriority="high" />
                     <div className={styles.screen_background} />
                 </div>
 
